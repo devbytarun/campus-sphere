@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CampusSphere | Dashboard</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="sidebar">
+            <h2>CampusSphere</h2>
+            <ul id="menu"></ul>
+        </div>
+
+        <div class="content">
+            <h1 id="welcome"></h1>
+
+            <!-- STUDENT MANAGEMENT (Admin) -->
+            <div id="students" class="section">
+                <h2>Student Management</h2>
+
+                <form id="studentForm">
+                    <input type="text" id="studentName" placeholder="Name" required />
+                    <input type="email" id="studentEmail" placeholder="Email" required />
+                    <input type="text" id="rollNumber" placeholder="Roll Number" required />
+                    <select id="classId" required>
+                        <option value="">Select Class</option>
+                    </select>
+
+                    <button type="submit">Add Student</button>
+                </form>
+
+                <h3>Student List</h3>
+                <table border="1" width="100%" id="studentTable">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Roll No</th>
+                            <th>Class</th>
+                            <th>Actions</th>
+
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+
+            <!-- OTHER SECTIONS -->
+            <div id="teachers" class="section">Teacher Management Module</div>
+            <div id="classes" class="section">Class Management Module</div>
+            <div id="subjects" class="section">Subject Management Module</div>
+           <div id="attendance" class="section">
+  <h2>Attendance Module</h2>
+
+  <label>Select Class:</label>
+  <select id="attendanceClass"></select>
+
+  <label>Select Subject:</label>
+  <select id="attendanceSubject"></select>
+
+  <button onclick="loadAttendanceStudents()">Load Students</button>
+
+  <div id="attendanceList"></div>
+
+  <button onclick="submitAttendance()">Submit Attendance</button>
+</div>
+
+            <div id="marks" class="section">
+  <h2>Marks Module</h2>
+
+  <label>Select Class:</label>
+  <select id="marksClass"></select>
+
+  <label>Select Subject:</label>
+  <select id="marksSubject"></select>
+
+  <button onclick="loadMarksStudents()">Load Students</button>
+
+  <div id="marksList"></div>
+
+  <button onclick="submitMarks()">Submit Marks</button>
+</div>
+
+            <div id="notices" class="section">Notice Board</div>
+
+        </div>
+
+    </div>
+
+    <script type="module" src="js/dashboard.js"></script>
+</body>
+
+</html>

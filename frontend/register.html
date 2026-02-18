@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CampusSphere | Register</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="login-wrapper">
+  <div class="login-card">
+    <h2>Register User</h2>
+
+    <form id="registerForm">
+
+      <input type="text" id="name" placeholder="Full Name" required>
+
+      <input type="email" id="email" placeholder="Email" required>
+
+      <input type="password" id="password" placeholder="Password" required>
+
+      <select id="role_id" required>
+        <option value="">Select Role</option>
+        <option value="1">Admin</option>
+        <option value="2">Teacher</option>
+        <option value="3">Student</option>
+      </select>
+
+      <button type="submit">Register</button>
+
+    </form>
+
+    <p style="margin-top:15px;">
+      Already have an account?
+      <a href="login.html">Login</a>
+    </p>
+
+  </div>
+</div>
+
+<script type="module" src="js/core/register.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* LOGIN PAGE */
+
+.login-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e1e2f, #3a3a5f);
+}
+
+.login-card {
+  background: white;
+  padding: 40px;
+  width: 320px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.login-card h2 {
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: gray;
+}
+
+.login-card input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.login-card button {
+  width: 100%;
+  padding: 10px;
+  background: #1e1e2f;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.login-card button:hover {
+  background: #333;
+}
+
+/* DASHBOARD */
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: #1e1e2f;
+  color: white;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+.sidebar li {
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.sidebar li:hover {
+  background: #333;
+}
+
+.content {
+  flex: 1;
+  padding: 30px;
+}
+
+.section {
+  display: none;
+  margin-top: 20px;
+}
